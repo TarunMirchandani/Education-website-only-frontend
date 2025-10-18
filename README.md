@@ -13,6 +13,6 @@ This is the frontend of an educational website built using **HTML**, **CSS**, an
 
 ## Tech Stack
 
-- **HTML5:** Basic structure of the web pages.
-- **CSS3:** Styling with Flexbox for layout and media queries for responsiveness.
+- **HTML:** Basic structure of the web pages.
+- **CSS:** Styling with Flexbox for layout and media queries for responsiveness.
 - **JavaScript:** Used for basic interactivity (e.g., course search, dynamic content).
