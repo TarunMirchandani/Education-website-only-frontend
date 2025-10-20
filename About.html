@@ -1,1 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EduPlatform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                </div>
+                <span>EduPlatform</span>
+            </a>
 
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-ghost">Sign In</button>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <svg id="closeIcon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+
+        <nav class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <div class="mobile-actions">
+                <button class="btn btn-ghost btn-full">Sign In</button>
+                <button class="btn btn-primary btn-full">Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" style="max-width: 48rem; margin: 0 auto; text-align: center;">
+                <span class="badge">About Us</span>
+                <h1 class="hero-title" style="font-size: 3rem; margin-top: 1rem;">Empowering Learners Worldwide</h1>
+                <p class="hero-description">
+                    We're on a mission to make quality education accessible to everyone, 
+                    anywhere, at any time. Join our community of passionate learners and expert instructors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section" style="padding: 3rem 0; border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; text-align: center;">
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">50,000+</div>
+                    <div style="font-size: 0.875rem; color: var(--muted-foreground);">Active Students</div>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">500+</div>
+                    <div style="font-size: 0.875rem; color: var(--muted-foreground);">Expert Courses</div>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">100+</div>
+                    <div style="font-size: 0.875rem; color: var(--muted-foreground);">Industry Experts</div>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">95%</div>
+                    <div style="font-size: 0.875rem; color: var(--muted-foreground);">Completion Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; gap: 3rem; align-items: center;">
+                <div style="order: 2;">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Team collaboration" style="width: 100%; border-radius: calc(var(--radius) + 8px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div style="order: 1;">
+                    <span class="badge badge-secondary">Our Mission</span>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; margin: 1.5rem 0;">Transforming Lives Through Education</h2>
+                    <div style="color: var(--muted-foreground); margin-bottom: 1.5rem;">
+                        <p style="margin-bottom: 1rem;">
+                            At EduPlatform, we believe that education is the key to unlocking human potential. 
+                            Our mission is to democratize learning by providing world-class education to anyone with the desire to learn.
+                        </p>
+                        <p>
+                            We partner with industry experts and educators to create courses that are not only 
+                            informative but also practical and immediately applicable to real-world scenarios.
+                        </p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem;">
+                        <div style="display: flex; gap: 1rem;">
+                            <div style="width: 2.5rem; height: 2.5rem; border-radius: 50%; background-color: rgba(26, 26, 26, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                            </div>
+                            <div>
+                                <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Accessible Education</h3>
+                                <p style="font-size: 0.875rem; color: var(--muted-foreground);">Breaking down barriers to quality education worldwide</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div style="width: 2.5rem; height: 2.5rem; border-radius: 50%; background-color: rgba(26, 26, 26, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                            </div>
+                            <div>
+                                <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Innovation First</h3>
+                                <p style="font-size: 0.875rem; color: var(--muted-foreground);">Leveraging technology to create engaging learning experiences</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div style="width: 2.5rem; height: 2.5rem; border-radius: 50%; background-color: rgba(26, 26, 26, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                            </div>
+                            <div>
+                                <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Student Success</h3>
+                                <p style="font-size: 0.875rem; color: var(--muted-foreground);">Committed to helping every student achieve their goals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Methodology -->
+    <section class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-secondary">Our Approach</span>
+                <h2 class="section-title">Learning Methodology</h2>
+                <p class="section-description">
+                    Our proven teaching approach combines theory with practice to ensure effective learning outcomes
+                </p>
+            </div>
+
+            <div style="display: grid; gap: 1.5rem;">
+                <div class="card">
+                    <div class="card-header">
+                        <div style="width: 3rem; height: 3rem; border-radius: 50%; background-color: rgba(26, 26, 26, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        </div>
+                        <h3 class="card-title">Comprehensive Curriculum</h3>
+                        <p class="card-description">Each course is carefully crafted with structured modules that build upon each other, ensuring a smooth learning progression from basics to advanced topics.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div style="width: 3rem; height: 3rem; border-radius: 50%; background-color: rgba(26, 26, 26, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="card-title">Interactive Learning</h3>
+                        <p class="card-description">Engage with hands-on projects, quizzes, and assignments. Learn by doing with real-world applications and practical exercises.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div style="width: 3rem; height: 3rem; border-radius: 50%; background-color: rgba(26, 26, 26, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                        </div>
+                        <h3 class="card-title">Personalized Pace</h3>
+                        <p class="card-description">Learn at your own speed with lifetime access to course materials. Pause, rewind, and review content whenever you need.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div style="width: 3rem; height: 3rem; border-radius: 50%; background-color: rgba(26, 26, 26, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                        </div>
+                        <h3 class="card-title">Expert Feedback</h3>
+                        <p class="card-description">Get guidance from instructors and peers through Q&A forums, code reviews, and community discussions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-secondary">Our Team</span>
+                <h2 class="section-title">Meet Our Expert Instructors</h2>
+                <p class="section-description">
+                    Learn from industry professionals with years of real-world experience
+                </p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="card card-center">
+                    <div class="card-header">
+                        <div style="margin-bottom: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Dr. Sarah Johnson" style="width: 6rem; height: 6rem; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h3 class="card-title">Dr. Sarah Johnson</h3>
+                        <p class="card-description">Web Development Expert</p>
+                    </div>
+                    <div class="card-content">
+                        <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">15+ years of experience in full-stack development</p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; font-size: 0.875rem;">
+                            <div>
+                                <div style="font-weight: 700;">12</div>
+                                <div style="color: var(--muted-foreground);">Courses</div>
+                            </div>
+                            <div style="border-left: 1px solid var(--border);"></div>
+                            <div>
+                                <div style="font-weight: 700;">45,000</div>
+                                <div style="color: var(--muted-foreground);">Students</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-center">
+                    <div class="card-header">
+                        <div style="margin-bottom: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Dr. Michael Chen" style="width: 6rem; height: 6rem; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h3 class="card-title">Dr. Michael Chen</h3>
+                        <p class="card-description">Data Science Lead</p>
+                    </div>
+                    <div class="card-content">
+                        <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">PhD in Machine Learning, Former Google AI researcher</p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; font-size: 0.875rem;">
+                            <div>
+                                <div style="font-weight: 700;">8</div>
+                                <div style="color: var(--muted-foreground);">Courses</div>
+                            </div>
+                            <div style="border-left: 1px solid var(--border);"></div>
+                            <div>
+                                <div style="font-weight: 700;">32,000</div>
+                                <div style="color: var(--muted-foreground);">Students</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-center">
+                    <div class="card-header">
+                        <div style="margin-bottom: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Emily Roberts" style="width: 6rem; height: 6rem; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h3 class="card-title">Emily Roberts</h3>
+                        <p class="card-description">Digital Marketing Strategist</p>
+                    </div>
+                    <div class="card-content">
+                        <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Helped 500+ businesses grow their online presence</p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; font-size: 0.875rem;">
+                            <div>
+                                <div style="font-weight: 700;">10</div>
+                                <div style="color: var(--muted-foreground);">Courses</div>
+                            </div>
+                            <div style="border-left: 1px solid var(--border);"></div>
+                            <div>
+                                <div style="font-weight: 700;">38,000</div>
+                                <div style="color: var(--muted-foreground);">Students</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-center">
+                    <div class="card-header">
+                        <div style="margin-bottom: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="James Wilson" style="width: 6rem; height: 6rem; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h3 class="card-title">James Wilson</h3>
+                        <p class="card-description">UX Design Director</p>
+                    </div>
+                    <div class="card-content">
+                        <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Award-winning designer with 20+ years experience</p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; font-size: 0.875rem;">
+                            <div>
+                                <div style="font-weight: 700;">15</div>
+                                <div style="color: var(--muted-foreground);">Courses</div>
+                            </div>
+                            <div style="border-left: 1px solid var(--border);"></div>
+                            <div>
+                                <div style="font-weight: 700;">52,000</div>
+                                <div style="color: var(--muted-foreground);">Students</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        </div>
+                        <span>EduPlatform</span>
+                    </a>
+                    <p class="footer-description">
+                        Empowering learners worldwide with quality education and expert instructors.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul>
+                        <li class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <span>support@eduplatform.com</span>
+                        </li>
+                        <li class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>123 Learning Street, Education City, EC 12345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduPlatform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
